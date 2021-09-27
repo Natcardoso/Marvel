@@ -1,0 +1,44 @@
+.series{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 40px 100px;
+
+    background: rgba(0, 0, 0, 0.904);
+}
+
+.div_serie{
+    display: flex;
+    flex-direction: column;
+
+    width: 250px !important;
+    margin: 0.5em;
+    padding: 0.5em;
+
+    color: white;
+
+    text-align: center;
+
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+.div_serie:hover{
+    color: red;
+
+    transform: scale(1.1);
+}
+
+.tituloSeries{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.imgSerie{
+    width: 250px;
+    height: 250px;
+
+    border-radius: 10px;
+}

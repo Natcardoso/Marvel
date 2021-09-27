@@ -1,0 +1,137 @@
+body{
+    font-family: RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+}
+
+.cabecalho{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+}
+
+.img_logo-icon{
+    width: 3%;
+}
+
+.imgBanner{
+    width: 350px;
+    height: 400px;
+
+    padding: 5em;
+
+    border-radius: 90px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+
+    height: 35em;
+
+    background-image: url(../assets/img/Untitled.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+}
+
+.divContainer_nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-right: 5em;
+    height: 100%;
+}
+
+.nome{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+.divDescricao{
+    margin-top: 1em;
+}
+
+.descricao{
+    font-size: 1.5em;
+
+    color: white;
+}
+
+@media (min-width: 424px) and (max-width: 767px){
+    .cabecalho{
+        height: 3em;
+    }
+
+    .img_logo-icon{
+        width: 8%;
+    }
+
+    .banner{
+        flex-direction: column;
+
+        height: 40em;
+
+        background-size: 300%;
+    }
+
+    .imgBanner{
+        width:150px;
+        height: 200px;
+        padding: 1.5em;
+
+        border-radius: 35px;
+    }
+
+    .divContainer_nome{
+        margin-right: 0;
+
+        text-align: center;
+
+        padding: 0 2em;
+
+        height: 50%;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width: 1024px){
+    .img_logo-icon{
+        width: 6%;
+    }
+
+    .imgBanner{
+        width: 270px;
+        height: 350px;
+
+        padding: 2em;
+
+        border-radius: 3em;
+    }
+
+    .divContainer_nome{
+        margin-right: 2em;
+    }
+
+    .comics{
+        padding: 40px 40px !important;
+    }
+
+    .div_comics{
+        width: 10em !important;
+    }
+
+    .series{
+        padding: 40px 40px !important;
+    }
+
+    .div_serie{
+        width: 14em !important;
+        text-align: center;
+    }
+}

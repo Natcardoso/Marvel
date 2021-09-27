@@ -1,0 +1,297 @@
+:root {
+    --black: rgba(5, 5, 5, 0.979);
+    --red: #e62429;
+    --white: #ffffff;
+    --blackDark: #000;
+}
+
+#paginacao{
+    background-color: var(--black);
+    padding: 0 130px;
+}
+
+.container_titulo{
+    padding-top: 30px;
+    margin: 20px 110px;
+
+    border-bottom: 3px solid var(--red);
+    border-left: 3px solid var(--red);
+
+    padding-left: 20px;
+    padding-bottom: 15px;
+
+    width: 50%;
+}
+
+.titulo{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container_filtro{
+    display: flex;
+    align-items: center;
+
+    margin: 0 110px;
+    height: 7em;
+}
+
+.filtro{
+    display: flex;
+    align-items: center;
+}
+
+.filtro_icon{
+    width: 3.5%;
+}
+
+.filtro_input{
+   border: none;
+   border-bottom: 3px solid var(--blackDark);
+
+   padding: 12px;
+   margin-left: 11px;
+   width: 60%;
+
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+.listaDePersonagens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 50px;
+}
+
+.imagemPersonagem{
+    width: 200px;
+    height: 250px;
+
+    margin-left: 1px;
+
+    border-radius: 5px;
+}
+
+.img2{
+    opacity: .5;
+
+    padding-left: 5px;
+
+    width: 200px;
+    height: 250px;
+
+    border-radius: 5px;
+}
+
+.imgNotFound{
+    width: 200px;
+    height: 250px;
+
+    padding-left: 5px;
+
+    border-radius: 5px;
+}
+
+.imgNotFound2{
+    opacity: .5;
+
+    padding-left: 5px;
+
+    width: 200px;
+    height: 250px;
+
+    border-radius: 10px;
+}
+
+.nome{
+    position: absolute;
+    color: var(--white);
+
+    font-size: 20px;
+    text-align: center;
+    
+    text-transform: uppercase;
+
+    padding-top: 10px;
+    border-bottom: var(--red) 4px solid;
+}
+
+.personagensDestaques{
+    padding: 0 200px;
+}
+
+/* .descricao_personagem{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: absolute;
+    
+    height: 16em;
+    padding: 10px;
+    
+
+    font-size: 17px;
+    text-align: center;
+    color: white;
+} */
+
+.personagem_card{
+    margin: 5px;
+}
+
+.personagem_card, 
+.personagem_destaque{
+    display: flex;
+    flex-direction: column; 
+}
+
+.front{
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+
+.back{
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .5s;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+
+    background-color: var(--blackDark);
+}
+
+.personagem_card:hover .front{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.personagem_card:hover .back{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+
+.invisivel{
+    display: none;
+}
+
+.container_paginas{
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+
+    padding: 1em;
+    color: white;
+}
+
+.paginas{
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(158, 157, 157, 0.493);
+
+    border-radius: 5px;
+
+    padding: 0.2em;
+}
+
+.sla{
+    padding: 0.3em;
+    transition: 0.5s;
+
+    margin: 0 0.2em;
+    border-radius: 5px;
+}
+
+.sla:hover{
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+
+    background-color: red;
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .container_titulo{
+        width: 70%;
+        margin: 50px;
+    }
+
+    .personagensDestaques{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 50px;
+        padding: 10px;
+    }
+
+    .container_filtro{
+        margin: 0 50px;
+    }
+
+    .filtro_input{
+        width: 100%;
+        margin: 0 30px;
+    }
+
+    #paginacao{
+        flex-wrap: wrap;
+
+        padding: 0 50px;
+    } 
+}
+
+@media (min-width: 424px) and (max-width: 767px){
+    .container_titulo{
+        margin: 50px;
+        width: 70%;
+    }
+    
+    .personagensDestaques{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 0 50px;
+        padding: 0;
+    }
+    
+    .container_filtro{
+        margin: 0 50px;
+        width: 100%;
+    }
+ 
+    .filtro{
+        width: 100%;
+    }
+
+    #paginacao{
+        padding: 0;
+    }
+
+    .listaDePersonagens{
+        justify-content: center;
+    }
+
+    .personagem_card{
+        padding-right: 0;
+    }
+
+    .imagemPersonagem, .imgNotFound{
+        width: 180px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    #paginacao{
+        padding: 0;
+    }
+}
