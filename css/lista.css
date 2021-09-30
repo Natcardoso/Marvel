@@ -7,7 +7,7 @@
 
 #paginacao{
     background-color: var(--black);
-    padding: 0 130px;
+    padding: 0 100px;
 }
 
 .container_titulo{
@@ -80,14 +80,14 @@
 
     padding-left: 5px;
 
-    width: 200px;
+    width: 195px;
     height: 250px;
 
     border-radius: 5px;
 }
 
 .imgNotFound{
-    width: 200px;
+    width: 197px;
     height: 250px;
 
     padding-left: 5px;
@@ -100,7 +100,7 @@
 
     padding-left: 5px;
 
-    width: 200px;
+    width: 197px;
     height: 250px;
 
     border-radius: 10px;

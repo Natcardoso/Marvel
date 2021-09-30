@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel - Personagens</title>
-    <link rel="icon" href="../assets/img/marvel icon.png">
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/cabecalhoDescricao.css" rel="stylesheet">
-    <link href="../css/comics.css" rel="stylesheet">
-    <link href="../css/serie.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marvel - Personagens</title>
+        <link rel="icon" href="../assets/img/marvel icon.png">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/cabecalhoDescricao.css" rel="stylesheet">
+        <link href="../css/comics.css" rel="stylesheet">
+        <link href="../css/serie.css" rel="stylesheet">
 
-</head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <img class="img_logo-icon" src="../assets/img/marvel icon.png">
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <img class="img_logo-icon" src="../assets/img/marvel icon.png">
+            </div>
+        </header>
+        <div class="banner"></div>
+        <div class="titulo_container">
+            <span class="titulos">Comics</span>
         </div>
-    </header>
-    <div class="banner"></div>
-    <div class="titulo_container"><span class="titulos">Comics</span></div>
-    <div class="comics"></div>
-    <div class="titulo_container"><span class="titulos">Séries</span></div>
-    <div class="series"></div>
+        <div class="comics"></div>
+        <div class="titulo_container">
+            <span class="titulos">Séries</span>
+        </div>
+        <div class="series"></div>
 
-    <script src="../services/Requisicao.js"></script>
-    <script src="../controller/characterIndiv.js"></script>
-</body>
+        <script src="../services/Requisicao.js"></script>
+        <script src="../controller/characterIndiv.js"></script>
+    </body>
 </html>
