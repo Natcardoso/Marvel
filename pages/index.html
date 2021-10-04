@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +9,37 @@
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/cabecalho.css" rel="stylesheet">
     <link href="../css/lista.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container_logo">
-        <div class="logo_posicao">
-            <img class="logo" src="../assets/img/logo da marvel.png">
-        </div>
+      <div class="logo_posicao">
+        <img class="logo" src="../assets/img/logo da marvel.png">
+      </div>
     </div>
-    <div class="container_titulo"><span class="titulo">Lista de personagens da Marvel</span></div>
+    <div class="container_titulo">
+      <span class="titulo">Lista de personagens da Marvel</span>
+    </div>
     <div class="container_filtro">
-        <div class="filtro">
-            <img class="filtro_icon" src="../assets/img/pesquisa.png">
-            <input class="filtro_input" id="filtro" type="text" placeholder="Procurar">
-        </div>
+      <div class="filtro">
+        <img class="filtro_icon" src="../assets/img/pesquisa.png">
+        <input class="filtro_input" id="filtro" type="text" placeholder="Procurar">
+      </div>
     </div>
-    <section id="paginacao">   
-        <div class="listaDePersonagens"><!-- Parte da lista dos personagens --></div>
-        <div class="container_paginas">
-            <div class="paginas">
-                <div class="sla" id="primeiro">&#171;</div>
-                <div class="sla" id="anterior">&lt;</div>
-                <div id="number">1</div>
-                <div class="sla" id="proximo">&gt;</div>
-                <div class="sla" id="ultimo">&#187;</div>
-            </div>
+    <section id="paginacao">
+      <div class="listaDePersonagens"><!-- Parte da lista dos personagens --></div>
+      <div class="container_paginas">
+        <div class="paginas">
+          <div class="sla" id="primeiro">&#171;</div>
+          <div class="sla" id="anterior">&lt;</div>
+          <div id="number">1</div>
+          <div class="sla" id="proximo">&gt;</div>
+          <div class="sla" id="ultimo">&#187;</div>
         </div>
+      </div>
     </section>
 
-    
+
     <script src="../services/Requisicao.js"></script>
     <script src="../controller/Filtro.js"></script>
-</body>
-</html> 
+  </body>
+</html>
