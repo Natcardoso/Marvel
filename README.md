@@ -15,6 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Javascript
 - Axios
 - Git, Github (actions, pages)
+- Paginação
 
 ## 📄 Funcionalidades
 
