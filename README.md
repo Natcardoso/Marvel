@@ -13,6 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Javascript
+- Axios
 - Git, Github (actions, pages)
 
 ## 📄 Funcionalidades
